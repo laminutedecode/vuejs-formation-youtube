@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "composite": true,
+    // l'option "composite": true est utilisée pour activer la compilation incrémentale dans les projets TypeScript. Cela permet de compiler uniquement les fichiers qui ont changé, au lieu de tout recompiler, ce qui rend le processus plus rapide.Cette option est particulièrement utile pour les projets qui dépendent de projets externes ou modules dans un cadre de monorepo. Elle permet à TypeScript de gérer correctement ces dépendances inter-projets et d’assurer qu’ils sont tous compilés dans le bon ordre.
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
