@@ -1,15 +1,18 @@
-<script setup lang="ts">
+<script setup >
 
+import Nav from './components/Nav.vue'
 
 </script>
 
 <template>
-  
 
+  <Nav />
 
+  <router-view />
 
 </template>
 
-<style>
+<style scoped>
+
 
 </style>
